@@ -253,6 +253,7 @@ function ForRiders() {
                 <div className="absolute inset-0" style={{ background: 'linear-gradient(180deg, rgba(1, 1, 1, 0.32) 0%, rgba(1, 1, 1, 0.73) 100%)' }}></div>
                 <div className="absolute bottom-0 left-0 right-0 p-6">
                   <p className="text-white font-semibold text-lg">Professional & Verified Community</p>
+                  <p className="text-white mt-2 lg:hidden" style={{ fontWeight: 400, fontSize: '14px' }}>Every rider and driver goes through identity checks — Work ID, NIN, and document verification — ensuring you ride with trusted professionals.</p>
                 </div>
               </div>
 
@@ -262,6 +263,7 @@ function ForRiders() {
                 <div className="absolute inset-0" style={{ background: 'linear-gradient(180deg, rgba(1, 1, 1, 0.32) 0%, rgba(1, 1, 1, 0.73) 100%)' }}></div>
                 <div className="absolute bottom-0 left-0 right-0 p-6">
                   <p className="text-white font-semibold text-lg">Affordable Daily Transportation</p>
+                  <p className="text-white mt-2 lg:hidden" style={{ fontWeight: 400, fontSize: '14px' }}>Spend less on commuting while enjoying more comfort than public transport.</p>
                 </div>
               </div>
 
@@ -271,6 +273,7 @@ function ForRiders() {
                 <div className="absolute inset-0" style={{ background: 'linear-gradient(180deg, rgba(1, 1, 1, 0.32) 0%, rgba(1, 1, 1, 0.73) 100%)' }}></div>
                 <div className="absolute bottom-0 left-0 right-0 p-6">
                   <p className="text-white font-semibold text-lg">Comfort Meets Convenience</p>
+                  <p className="text-white mt-2 lg:hidden" style={{ fontWeight: 400, fontSize: '14px' }}>Air-conditioned rides, predictable routes, flexible pickup points, and professional drivers.</p>
                 </div>
               </div>
             </div>
@@ -283,6 +286,7 @@ function ForRiders() {
                 <div className="absolute inset-0" style={{ background: 'linear-gradient(180deg, rgba(1, 1, 1, 0.32) 0%, rgba(1, 1, 1, 0.73) 100%)' }}></div>
                 <div className="absolute bottom-0 left-0 right-0 p-6">
                   <p className="text-white font-semibold text-lg">Eco Friendly</p>
+                  <p className="text-white mt-2 lg:hidden" style={{ fontWeight: 400, fontSize: '14px' }}>Every shared ride means one less car on the road, contributing to cleaner air, reduced traffic, and a more sustainable environment.</p>
                 </div>
               </div>
 
@@ -292,6 +296,7 @@ function ForRiders() {
                 <div className="absolute inset-0" style={{ background: 'linear-gradient(180deg, rgba(1, 1, 1, 0.32) 0%, rgba(1, 1, 1, 0.73) 100%)' }}></div>
                 <div className="absolute bottom-0 left-0 right-0 p-6">
                   <p className="text-white font-semibold text-lg">Designed for Nigeria</p>
+                  <p className="text-white mt-2 lg:hidden" style={{ fontWeight: 400, fontSize: '14px' }}>Spend less on commuting while enjoying more comfort than public transport.</p>
                 </div>
               </div>
             </div>
