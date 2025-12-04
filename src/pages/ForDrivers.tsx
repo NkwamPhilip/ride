@@ -15,28 +15,45 @@ function ForDrivers() {
   return (
     <div className="w-full">
       {/* Hero Section */}
-      <section className="bg-white relative" style={{ height: '600px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+      <section className="bg-white relative pt-5 pb-10 lg:pt-0 lg:pb-0 lg:h-[600px]" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
           <div className="flex flex-col items-center justify-center relative z-10" style={{ height: '100%' }}>
             {/* Content */}
             <div className="text-center max-w-4xl mx-auto">
               {/* White Container with Text */}
-              <div className="inline-block mb-6 px-4 py-2 bg-white shadow-md" style={{ borderRadius: '30px' }}>
+              <div className="inline-block mb-4 lg:mb-6 px-4 py-2 bg-white shadow-md" style={{ borderRadius: '30px' }}>
                 <p style={{ fontSize: '14px', fontWeight: 600, color: '#30004B' }}>Not on the passenger side? Perfect.</p>
               </div>
 
               {/* Headline */}
-              <h1 className="mb-6 leading-tight mx-auto" style={{ fontSize: '55px', fontWeight: 500, maxWidth: '555px' }}>
+              <h1 className="mb-4 lg:mb-6 leading-tight mx-auto text-[32px] lg:text-[55px] w-[390px] lg:w-[555px]" style={{ fontWeight: 500 }}>
                 Earn More From the Trips You Already Take
               </h1>
 
               {/* Body Text */}
-              <p className="text-gray-600 mb-8 max-w-2xl mx-auto" style={{ fontSize: '16px', fontWeight: 300 }}>
+              <style>{`
+                .driver-body-text {
+                  font-weight: 400;
+                }
+                @media (min-width: 1024px) {
+                  .driver-body-text {
+                    font-weight: 300;
+                  }
+                }
+              `}</style>
+              <p className="text-gray-600 mb-6 lg:mb-8 mx-auto text-sm lg:text-base w-[334px] lg:w-[556px] driver-body-text">
                 Turn your daily commute into a simple, steady source of income. With Ride2Five, you earn money every time you drive to work. Share empty seats, choose who rides with you, and stay in control on every trip.
               </p>
 
-              {/* Download Button */}
-              <button className="bg-black text-white hover:bg-gray-800 rounded-lg px-6 py-3 transition-all duration-200 flex items-center justify-center gap-2 shadow-md hover:shadow-lg mx-auto">
+              {/* Download Button - Mobile only full width with padding */}
+              <div className="block lg:hidden w-full" style={{ width: 'calc(100vw - 40px)', marginLeft: 'calc(-50vw + 50% + 10px)', paddingLeft: '20px', paddingRight: '20px' }}>
+                <button className="bg-black text-white hover:bg-gray-800 rounded-lg py-3 px-6 transition-all duration-200 flex items-center justify-center gap-2 shadow-md hover:shadow-lg w-full">
+                  <img src={smartPhoneIcon} alt="Phone" className="w-5 h-5" />
+                  <span style={{ fontWeight: 600, fontSize: '14px' }}>Download the app</span>
+                </button>
+              </div>
+              {/* Download Button - Desktop */}
+              <button className="hidden lg:flex bg-black text-white hover:bg-gray-800 rounded-lg px-6 py-3 transition-all duration-200 items-center justify-center gap-2 shadow-md hover:shadow-lg mx-auto">
                 <img src={smartPhoneIcon} alt="Phone" className="w-5 h-5" />
                 <span style={{ fontWeight: 600, fontSize: '14px' }}>Download the app</span>
               </button>
@@ -46,31 +63,31 @@ function ForDrivers() {
       </section>
 
       {/* Spacing */}
-      <div className="h-12"></div>
+      <div className="h-8 lg:h-12"></div>
 
       {/* Divider */}
       <div className="w-full border-t border-gray-200"></div>
 
       {/* Why Drive With Us Section */}
-      <section className="bg-gray-50 py-20 lg:h-[750px]">
+      <section className="bg-gray-50 py-8 lg:py-20 lg:h-[750px]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-col lg:flex-row gap-12 items-start">
+          <div className="flex flex-col lg:flex-row gap-6 lg:gap-12 items-start">
             {/* Left - Woman Image */}
             <div className="flex-1">
               <div className="rounded-2xl overflow-hidden">
-                <img src={whyDriveWoman} alt="Woman" className="w-full object-cover" style={{ height: '530px' }} />
+                <img src={whyDriveWoman} alt="Woman" className="w-full object-cover lg:h-[530px]" style={{ height: '370px' }} />
               </div>
             </div>
 
             {/* Right - Content */}
             <div className="flex-1">
-              <h2 className="text-gray-900 mb-12" style={{ fontSize: '38px', fontWeight: 800 }}>Why Drive With Us?</h2>
+              <h2 className="text-gray-900 mb-6 lg:mb-12 text-2xl lg:text-[38px] lg:font-extrabold" style={{ fontWeight: 600 }}>Why Drive With Us?</h2>
 
               {/* Advantages Grid */}
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8 mb-6 lg:mb-12">
                 {/* Advantage 1 */}
-                <div>
-                  <div className="mb-4">
+                <div className="lg:border-0 border-b border-gray-300 pb-4 lg:pb-0">
+                  <div className="mb-3 lg:mb-4">
                     <img src={earnWithoutIcon} alt="Earn Without" className="w-12 h-12" />
                   </div>
                   <h3 className="text-gray-900 mb-2" style={{ fontSize: '16px', fontWeight: 600 }}>Earn Without Changing Your Routine</h3>
@@ -80,8 +97,8 @@ function ForDrivers() {
                 </div>
 
                 {/* Advantage 2 */}
-                <div>
-                  <div className="mb-4">
+                <div className="lg:border-0 border-b border-gray-300 pb-4 lg:pb-0">
+                  <div className="mb-3 lg:mb-4">
                     <img src={chooseYourIcon} alt="Choose Your" className="w-12 h-12" />
                   </div>
                   <h3 className="text-gray-900 mb-2" style={{ fontSize: '16px', fontWeight: 600 }}>Choose Your Passengers</h3>
@@ -91,8 +108,8 @@ function ForDrivers() {
                 </div>
 
                 {/* Advantage 3 */}
-                <div>
-                  <div className="mb-4">
+                <div className="lg:border-0 border-b border-gray-300 pb-4 lg:pb-0">
+                  <div className="mb-3 lg:mb-4">
                     <img src={safeVerifiedIcon} alt="Safe Verified" className="w-12 h-12" />
                   </div>
                   <h3 className="text-gray-900 mb-2" style={{ fontSize: '16px', fontWeight: 600 }}>Safe, Verified Community</h3>
@@ -102,8 +119,8 @@ function ForDrivers() {
                 </div>
 
                 {/* Advantage 4 */}
-                <div>
-                  <div className="mb-4">
+                <div className="lg:border-0 border-b border-gray-300 pb-4 lg:pb-0">
+                  <div className="mb-3 lg:mb-4">
                     <img src={lowFeesIcon} alt="Low Fees" className="w-12 h-12" />
                   </div>
                   <h3 className="text-gray-900 mb-2" style={{ fontSize: '16px', fontWeight: 600 }}>Low Fees, More Earnings</h3>
@@ -115,7 +132,14 @@ function ForDrivers() {
 
               {/* Get Started Button */}
               <div className="flex justify-center lg:justify-start">
-                <button className="bg-black text-white hover:bg-gray-800 rounded-lg transition-all duration-200 shadow-md hover:shadow-lg flex items-center justify-center" style={{ width: '200px', height: '50px' }}>
+                {/* Mobile Button - Full width with padding */}
+                <div className="block lg:hidden w-full" style={{ width: 'calc(100vw - 40px)', marginLeft: 'calc(-50vw + 50% + 10px)', paddingLeft: '20px', paddingRight: '20px' }}>
+                  <button className="bg-black text-white hover:bg-gray-800 rounded-lg py-3 px-6 transition-all duration-200 shadow-md hover:shadow-lg flex items-center justify-center w-full">
+                    <span className="font-semibold">Get Started</span>
+                  </button>
+                </div>
+                {/* Desktop Button */}
+                <button className="hidden lg:flex bg-black text-white hover:bg-gray-800 rounded-lg transition-all duration-200 shadow-md hover:shadow-lg items-center justify-center" style={{ width: '200px', height: '50px' }}>
                   <span className="font-semibold">Get Started</span>
                 </button>
               </div>
@@ -125,36 +149,36 @@ function ForDrivers() {
       </section>
 
       {/* Spacing */}
-      <div className="h-16"></div>
+      <div className="h-8 lg:h-16"></div>
 
       {/* How It Works Section */}
-      <section className="bg-white py-20">
+      <section className="bg-white py-8 lg:py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Header */}
-          <div className="text-center mb-12">
-            <h2 className="text-gray-900 mb-4" style={{ fontSize: '38px', fontWeight: 800 }}>How It Works for Drivers</h2>
-            <p className="text-gray-600 max-w-2xl mx-auto" style={{ fontSize: '16px', fontWeight: 400 }}>
+          <div className="text-center mb-6 lg:mb-12">
+            <h2 className="text-gray-900 mb-3 lg:mb-4 text-2xl lg:text-[38px] w-[390px] lg:w-auto mx-auto" style={{ fontWeight: 800 }}>How It Works for Drivers</h2>
+            <p className="text-gray-600 max-w-2xl mx-auto text-sm lg:text-base w-[390px] lg:max-w-2xl" style={{ fontWeight: 400 }}>
               Enjoy premium carpooling with trusted professionals. Save money, reduce stress, and get to your destination safely — every day.
             </p>
           </div>
 
           {/* Content - Mobile Image and Steps */}
-          <div className="flex flex-col lg:flex-row gap-12 items-start">
+          <div className="flex flex-col lg:flex-row gap-6 lg:gap-12 items-start">
             {/* Left - Mobile Image */}
-            <div className="flex-1 flex justify-center lg:justify-start">
-              <div className="bg-black rounded-2xl p-4 flex items-center justify-center" style={{ width: '600px', height: '470px' }}>
+            <div className="flex-1 flex justify-center lg:justify-start w-full lg:w-auto">
+              <div className="bg-black rounded-2xl p-4 flex items-center justify-center w-full max-w-full lg:w-[600px]" style={{ height: '470px' }}>
                 <img
                   src={howItWorksMobileImage}
                   alt="Mobile App"
-                  className="rounded-2xl"
-                  style={{ width: '220px', height: '430px', objectFit: 'contain' }}
+                  className="rounded-2xl mx-auto"
+                  style={{ width: '222px', height: '430px', objectFit: 'contain' }}
                 />
               </div>
             </div>
 
             {/* Right - Steps */}
             <div className="flex-1">
-              <div className="space-y-4">
+              <div className="space-y-3 lg:space-y-4">
                 {/* Step 1 */}
                 <div
                   onClick={() => setActiveStep(0)}
@@ -209,11 +233,11 @@ function ForDrivers() {
       </section>
 
       {/* Spacing */}
-      <div className="h-16"></div>
+      <div className="h-8 lg:h-16"></div>
 
       {/* Start Earning Section */}
-      <section className="py-20">
-        <div style={{ paddingLeft: '60px', paddingRight: '60px' }}>
+      <section className="py-12 lg:py-20">
+        <div style={{ paddingLeft: '20px', paddingRight: '20px' }} className="lg:px-[60px]">
           <div className="relative rounded-3xl overflow-hidden bg-white" style={{ boxShadow: '0 10px 30px rgba(0,0,0,0.1)' }}>
             <div className="bg-black rounded-3xl">
               {/* Background Image at Bottom */}
@@ -232,7 +256,7 @@ function ForDrivers() {
                 }}
               />
 
-              <div className="flex flex-col lg:flex-row items-center gap-8 p-8 lg:p-12 relative z-10">
+              <div className="flex flex-col lg:flex-row items-center gap-8 p-6 lg:p-12 relative z-10">
                 {/* Left Side - Text Content */}
                 <div className="flex-1 text-white">
                   <h2 className="mb-4" style={{ fontSize: '26px', fontWeight: 800 }}>
