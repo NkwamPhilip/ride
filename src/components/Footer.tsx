@@ -10,10 +10,10 @@ function Footer() {
           {/* Top Section */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
             {/* Left - Logo and Social Media */}
-            <div>
+            <div className="flex flex-col items-center md:items-start">
               <img src={footerLogo} alt="Ride2Five" className="mb-4" style={{ width: '200px', height: '40px' }} />
-              <p className="text-white mb-4" style={{ fontWeight: 400, fontSize: '16px' }}>Follow us and join our community</p>
-              <div className="flex gap-4">
+              <p className="text-white mb-4 text-center md:text-left" style={{ fontWeight: 400, fontSize: '16px' }}>Follow us and join our community</p>
+              <div className="flex gap-4 justify-center md:justify-start">
                 {/* Facebook */}
                 <a href="#" className="text-white hover:text-gray-300">
                   <svg fill="currentColor" viewBox="0 0 24 24" style={{ width: '24px', height: '24px' }}>
@@ -73,13 +73,13 @@ function Footer() {
 
           {/* Bottom Section */}
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-            {/* Left - Copyright */}
-            <div className="text-gray-400" style={{ fontWeight: 300, fontSize: '14px' }}>
+            {/* Copyright - First on mobile, left on desktop */}
+            <div className="text-gray-400 order-1 md:order-1" style={{ fontWeight: 300, fontSize: '14px' }}>
               © 2025 Ride2Five. All rights Reserved
             </div>
 
-            {/* Right - Legal Links */}
-            <div className="flex gap-6 text-gray-400" style={{ fontWeight: 300, fontSize: '14px' }}>
+            {/* Legal Links - Second on mobile, right on desktop */}
+            <div className="flex gap-6 text-gray-400 order-2 md:order-2" style={{ fontWeight: 300, fontSize: '14px' }}>
               <a href="#" className="hover:text-gray-300 underline">Terms of use</a>
               <a href="#" className="hover:text-gray-300 underline">Privacy Policies</a>
               <a href="#" className="hover:text-gray-300 underline">Cookies</a>
