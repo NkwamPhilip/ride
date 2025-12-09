@@ -13,7 +13,7 @@ import Footer from '../components/Footer'
 function ForDrivers() {
   const [activeStep, setActiveStep] = useState(0)
   return (
-    <div className="w-full">
+    <div className="w-full" style={{ marginBottom: 0, paddingBottom: 0 }}>
       {/* Hero Section */}
       <section className="bg-white relative pt-5 pb-10 lg:pt-0 lg:pb-0 lg:h-[600px]" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">

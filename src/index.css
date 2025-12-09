@@ -3,29 +3,40 @@
 @tailwind utilities;
 
 @layer base {
-  body {
-    @apply bg-gray-50 text-gray-900;
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
-  }
-  
   html {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
-  }
-  
+    height: 100%;
+}
+
+body {
+    @apply bg-gray-50 text-gray-900;
+  margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  min-height: 100vh;
+    position: relative;
+}
+
   #root {
     margin: 0;
     padding: 0;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-  }
+}
   
   footer {
     margin-top: auto;
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+    flex-shrink: 0;
+}
+
+  /* Prevent any content from appearing after footer */
+  main {
+    flex: 1;
   }
 }
 

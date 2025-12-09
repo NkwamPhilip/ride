@@ -16,16 +16,179 @@ import hero6 from '../assets/hero6.jpg'
 import hero7 from '../assets/hero7.jpg'
 import hero8 from '../assets/hero8.jpg'
 import peopleIcon from '../assets/people.svg'
+import heroFlowerLeft from '../assets/hero-flower-left.svg'
+import heroFlower from '../assets/hero-flower.svg'
+import heroFlowerBottomRight from '../assets/hero-flower-bottom-right.svg'
 import Footer from '../components/Footer'
 
 function ForRiders() {
   return (
-    <div className="w-full">
+    <div className="w-full" style={{ marginBottom: 0, paddingBottom: 0 }}>
       {/* Hero Section */}
       <section className="bg-white relative pt-5 pb-10 lg:pt-0 lg:pb-0 lg:h-[800px]" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+        {/* Mobile Hero Images - Before content, horizontally arranged */}
+        {/* Hero Flower Left - At top left of Hero 4 (Mobile) */}
+        <img
+          src={heroFlowerLeft}
+          alt=""
+          className="block lg:hidden absolute"
+          style={{
+            top: '5px',
+            left: '5px',
+            zIndex: 4,
+            width: '50px',
+            height: '40px'
+          }}
+        />
+        {/* Hero 4 Image - Mobile, Left, overlapping Hero 6 by 40% */}
+        <img
+          src={hero4}
+          alt=""
+          className="block lg:hidden absolute"
+          style={{
+            height: '144px',
+            width: '100px',
+            top: '40px',
+            left: '40px',
+            zIndex: 3,
+            objectFit: 'cover',
+            borderRadius: '16px'
+          }}
+        />
+        {/* Hero 1 Image - Mobile, Right, moved up */}
+        <img
+          src={hero1}
+          alt=""
+          className="block lg:hidden absolute"
+          style={{
+            height: '194px',
+            width: '144px',
+            top: '40px',
+            left: '232px',
+            zIndex: 1,
+            objectFit: 'cover',
+            borderRadius: '16px'
+          }}
+        />
+        {/* Hero Flower Bottom Right - At bottom right of Hero 1 (Mobile) */}
+        <img
+          src={heroFlowerBottomRight}
+          alt=""
+          className="block lg:hidden absolute"
+          style={{
+            top: '234px',
+            left: '376px',
+            zIndex: 4,
+            width: '33px',
+            height: '27px'
+          }}
+        />
+        {/* Hero 6 Image - Mobile, Center, overlapping Hero 1 by 10% */}
+        <img
+          src={hero6}
+          alt=""
+          className="block lg:hidden absolute"
+          style={{
+            height: '252px',
+            width: '158px',
+            top: '88px',
+            left: '88px',
+            zIndex: 2,
+            objectFit: 'cover',
+            borderRadius: '16px'
+          }}
+        />
+        {/* Hero 5 Image - Overlapping Hero 7 from the left */}
+        <img
+          src={hero5}
+          alt=""
+          className="hidden lg:block absolute"
+          style={{
+            height: '170px',
+            width: '128px',
+            top: '88px',
+            left: '117px',
+            zIndex: 3,
+            objectFit: 'cover',
+            borderRadius: '16px'
+          }}
+        />
+        {/* Hero Flower - At the edge of Hero 5 */}
+        <img
+          src={heroFlowerLeft}
+          alt=""
+          className="hidden lg:block absolute"
+          style={{
+            top: '55px',
+            left: '70px',
+            zIndex: 4,
+            width: '50px',
+            height: '40px'
+          }}
+        />
+        {/* Hero 7 Image - Top Left */}
+        <img
+          src={hero7}
+          alt=""
+          className="hidden lg:block absolute"
+          style={{
+            height: '208px',
+            width: '144px',
+            top: '50px',
+            left: '160px',
+            zIndex: 2,
+            objectFit: 'cover',
+            borderRadius: '16px'
+          }}
+        />
+        {/* Hero 4 Image - Top Right */}
+        <img
+          src={hero4}
+          alt=""
+          className="hidden lg:block absolute"
+          style={{
+            height: '160px',
+            width: '112px',
+            top: '50px',
+            right: '160px',
+            zIndex: 2,
+            objectFit: 'cover',
+            borderRadius: '16px'
+          }}
+        />
+        {/* Hero 6 Image - Top Right, starting from 70% of Hero 4 height */}
+        <img
+          src={hero6}
+          alt=""
+          className="hidden lg:block absolute"
+          style={{
+            height: '208px',
+            width: '160px',
+            top: '162px',
+            right: '180px',
+            zIndex: 2,
+            objectFit: 'cover',
+            borderRadius: '16px'
+          }}
+        />
+        {/* Hero 8 Image - Top Right, more aligned to the right */}
+        <img
+          src={hero8}
+          alt=""
+          className="hidden lg:block absolute"
+          style={{
+            height: '208px',
+            width: '144px',
+            top: '130px',
+            right: '80px',
+            zIndex: 2,
+            objectFit: 'cover',
+            borderRadius: '16px'
+          }}
+        />
         {/* Background Image - Hidden on mobile */}
         <div className="hidden lg:block absolute inset-0" style={{ backgroundImage: `url(${riderHeroBackground})`, backgroundSize: '100% auto', backgroundPosition: 'right center', backgroundRepeat: 'no-repeat' }}></div>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative w-full">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative w-full pt-[408px] lg:pt-0">
           {/* Center - Content */}
           <div className="text-center max-w-[700px] mx-auto relative z-10 lg:-translate-y-20">
             <h1 className="text-2xl sm:text-3xl lg:text-[55px] font-medium text-gray-900 mb-4 lg:mb-6 lg:leading-normal max-w-[700px] mx-auto px-4 lg:px-0" style={{ lineHeight: '1.2' }}>
@@ -48,15 +211,99 @@ function ForRiders() {
             </div>
           </div>
         </div>
-        {/* Animated Car - Hidden on mobile */}
+        {/* Hero 3 Image - Bottom Left, Overlapping Hero 2 from the left */}
+        <img
+          src={hero3}
+          alt=""
+          className="hidden lg:block absolute"
+          style={{
+            height: '170px',
+            width: '128px',
+            bottom: '100px',
+            left: '117px',
+            zIndex: 3,
+            objectFit: 'cover',
+            borderRadius: '16px'
+          }}
+        />
+        {/* Hero 2 Image - Bottom Left */}
+        <img
+          src={hero2}
+          alt=""
+          className="hidden lg:block absolute"
+          style={{
+            height: '208px',
+            width: '144px',
+            bottom: '100px',
+            left: '160px',
+            zIndex: 2,
+            objectFit: 'cover',
+            borderRadius: '16px'
+          }}
+        />
+        {/* Hero 1 Image - Bottom Right */}
+        <img
+          src={hero1}
+          alt=""
+          className="hidden lg:block absolute"
+          style={{
+            height: '216px',
+            width: '160px',
+            bottom: '100px',
+            right: '160px',
+            zIndex: 2,
+            objectFit: 'cover',
+            borderRadius: '16px'
+          }}
+        />
+        {/* Hero Flower - At the top right of Hero 1 */}
+        <img
+          src={heroFlower}
+          alt=""
+          className="hidden lg:block absolute"
+          style={{
+            top: '450px',
+            right: '110px',
+            zIndex: 4,
+            width: '50px',
+            height: '40px'
+          }}
+        />
+        {/* Animated Cars - Hidden on mobile */}
         <div className="hidden lg:block absolute bottom-0 left-0 w-full h-20 overflow-hidden">
+          {/* First Car - Red */}
           <img
             src={bubbleGumCar}
             alt="Car"
-            className="absolute bottom-0 h-16 animate-[slide_10s_linear_infinite]"
+            className="absolute bottom-0 h-16"
             style={{
               animation: 'slide 10s linear infinite',
-              left: '-117px'
+              left: '-117px',
+              filter: 'hue-rotate(0deg) saturate(2) brightness(1.1)'
+            }}
+          />
+          {/* Second Car - Green */}
+          <img
+            src={bubbleGumCar}
+            alt="Car"
+            className="absolute bottom-0 h-16"
+            style={{
+              animation: 'slide 10s linear infinite',
+              animationDelay: '3.33s',
+              left: '-117px',
+              filter: 'hue-rotate(120deg) saturate(1.5) brightness(1.1)'
+            }}
+          />
+          {/* Third Car - Blue */}
+          <img
+            src={bubbleGumCar}
+            alt="Car"
+            className="absolute bottom-0 h-16"
+            style={{
+              animation: 'slide 10s linear infinite',
+              animationDelay: '6.66s',
+              left: '-117px',
+              filter: 'hue-rotate(240deg) saturate(1.5) brightness(1.1)'
             }}
           />
         </div>
@@ -227,7 +474,7 @@ function ForRiders() {
 
       {/* Advantages Section */}
       <section className="py-12 lg:py-20" style={{ backgroundColor: '#F8F8F8' }}>
-        <div style={{ paddingLeft: '20px', paddingRight: '20px' }} className="lg:px-[60px]">
+        <div style={{ paddingLeft: '20px', paddingRight: '20px' }} className="lg:px-16">
           {/* Header */}
           <div className="text-center mb-8 lg:mb-12">
             <h2 className="mb-4 mx-auto text-2xl sm:text-3xl lg:text-[38px]" style={{ fontWeight: 800, maxWidth: '500px' }}>
@@ -244,7 +491,15 @@ function ForRiders() {
           </div>
 
           {/* Image Cards Grid */}
-          <div className="space-y-6">
+          <style>{`
+            @media (min-width: 1024px) {
+              .advantages-cards-container {
+                padding-left: 60px !important;
+                padding-right: 60px !important;
+              }
+            }
+          `}</style>
+          <div className="space-y-6 advantages-cards-container">
             {/* Top Row - 3 Cards */}
             <div className="grid grid-cols-1 md:grid-cols-6 gap-6">
               {/* Card 1 */}
@@ -309,7 +564,15 @@ function ForRiders() {
 
       {/* Earn More Section */}
       <section className="py-12 lg:py-20">
-        <div style={{ paddingLeft: '20px', paddingRight: '20px' }} className="lg:px-[60px]">
+        <style>{`
+          @media (min-width: 1024px) {
+            .earn-more-outer-container {
+              padding-left: 60px !important;
+              padding-right: 60px !important;
+            }
+          }
+        `}</style>
+        <div style={{ paddingLeft: '20px', paddingRight: '20px' }} className="lg:px-16 earn-more-outer-container">
           <div className="relative rounded-3xl overflow-hidden" style={{ backgroundColor: '#2F0F5F' }}>
             {/* SVG for clip-path mask */}
             <svg width="0" height="0" style={{ position: 'absolute' }}>

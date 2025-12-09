@@ -4,8 +4,8 @@ import footerLogo from '../assets/footer-logo.svg'
 
 function Footer() {
   return (
-    <footer style={{ marginBottom: 0, paddingBottom: 0 }}>
-      <div className="bg-black" style={{ marginBottom: 0, paddingBottom: 0, borderTopLeftRadius: '60px', borderTopRightRadius: '60px' }}>
+    <footer style={{ marginBottom: 0, paddingBottom: 0, width: '100%' }}>
+      <div className="bg-black" style={{ marginBottom: 0, paddingBottom: 0, borderTopLeftRadius: '60px', borderTopRightRadius: '60px', width: '100%' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
           {/* Top Section */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">

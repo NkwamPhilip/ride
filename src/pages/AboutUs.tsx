@@ -12,7 +12,7 @@ import riderHeroBackground from '../assets/rider-hero-background 09.55.29.svg'
 
 function AboutUs() {
   return (
-    <div className="w-full">
+    <div className="w-full" style={{ marginBottom: 0, paddingBottom: 0 }}>
       {/* Hero Section */}
       <section className="bg-white relative py-20 px-5 lg:px-[60px] about-us-hero-section" style={{ minHeight: '1100px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
         <div className="w-full flex items-center justify-center">
