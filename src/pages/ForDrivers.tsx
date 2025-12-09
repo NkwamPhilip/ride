@@ -8,6 +8,12 @@ import lowFeesIcon from '../assets/low-fees.svg'
 import howItWorksMobileImage from '../assets/how-it-works-mobile-image.png'
 import peopleDriverIcon from '../assets/people-driver.svg'
 import riderHeroBackground from '../assets/rider-hero-background 09.55.29.svg'
+import hero9 from '../assets/hero9.png'
+import hero10 from '../assets/hero10.jpg'
+import hero11 from '../assets/hero11.png'
+import hero12 from '../assets/hero12.jpg'
+import heroFlowerLeft from '../assets/hero-flower-left.svg'
+import heroFlowerBottomRight from '../assets/hero-flower-bottom-right.svg'
 import Footer from '../components/Footer'
 
 function ForDrivers() {
@@ -16,7 +22,141 @@ function ForDrivers() {
     <div className="w-full" style={{ marginBottom: 0, paddingBottom: 0 }}>
       {/* Hero Section */}
       <section className="bg-white relative pt-5 pb-10 lg:pt-0 lg:pb-0 lg:h-[600px]" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+        {/* Hero 9 - Standing straight, left of content */}
+        <img
+          src={hero9}
+          alt=""
+          className="hidden lg:block absolute"
+          style={{
+            height: '360px',
+            width: '250px',
+            bottom: '120px',
+            left: '180px',
+            zIndex: 2,
+            objectFit: 'cover',
+            borderRadius: '16px'
+          }}
+        />
+        {/* Hero 10 - Laying on Hero 9, slanted to the left */}
+        <img
+          src={hero10}
+          alt=""
+          className="hidden lg:block absolute"
+          style={{
+            height: '360px',
+            width: '250px',
+            bottom: '120px',
+            left: '150px',
+            zIndex: 3,
+            objectFit: 'cover',
+            borderRadius: '16px',
+            transform: 'rotate(-12deg)'
+          }}
+        />
+        {/* Hero Flower Left - At top left of Hero 10 */}
+        <img
+          src={heroFlowerLeft}
+          alt=""
+          className="hidden lg:block absolute"
+          style={{
+            top: '100px',
+            left: '100px',
+            zIndex: 4,
+            width: '50px',
+            height: '40px'
+          }}
+        />
+        {/* Hero 11 - Standing straight, right of content */}
+        <img
+          src={hero11}
+          alt=""
+          className="hidden lg:block absolute"
+          style={{
+            height: '360px',
+            width: '250px',
+            bottom: '120px',
+            right: '180px',
+            zIndex: 2,
+            objectFit: 'cover',
+            borderRadius: '16px'
+          }}
+        />
+        {/* Hero 12 - Laying on Hero 11, slanted to the right */}
+        <img
+          src={hero12}
+          alt=""
+          className="hidden lg:block absolute"
+          style={{
+            height: '360px',
+            width: '250px',
+            bottom: '120px',
+            right: '150px',
+            zIndex: 3,
+            objectFit: 'cover',
+            borderRadius: '16px',
+            transform: 'rotate(12deg)'
+          }}
+        />
+        {/* Hero Flower Bottom Right - At bottom right of Hero 12 */}
+        <img
+          src={heroFlowerBottomRight}
+          alt=""
+          className="hidden lg:block absolute"
+          style={{
+            bottom: '80px',
+            right: '130px',
+            zIndex: 4,
+            width: '33px',
+            height: '27px'
+          }}
+        />
+        {/* Mobile Hero Images - Before content, centered */}
+        {/* Hero 9 - Mobile, standing straight */}
+        <img
+          src={hero9}
+          alt=""
+          className="block lg:hidden absolute"
+          style={{
+            height: '287px',
+            width: '201px',
+            top: '40px',
+            left: '50%',
+            transform: 'translateX(-50%)',
+            zIndex: 2,
+            objectFit: 'cover',
+            borderRadius: '16px'
+          }}
+        />
+        {/* Hero 10 - Mobile, laying on Hero 9, slanted to the left */}
+        <img
+          src={hero10}
+          alt=""
+          className="block lg:hidden absolute"
+          style={{
+            height: '287px',
+            width: '201px',
+            top: '40px',
+            left: 'calc(50% - 10px)',
+            zIndex: 3,
+            objectFit: 'cover',
+            borderRadius: '16px',
+            transform: 'translateX(-50%) rotate(-12deg)'
+          }}
+        />
+        {/* Hero Flower Left - Mobile, at top left of Hero 10 */}
+        <img
+          src={heroFlowerLeft}
+          alt=""
+          className="block lg:hidden absolute"
+          style={{
+            top: '20px',
+            left: 'calc(50% - 150px)',
+            zIndex: 4,
+            width: '50px',
+            height: '40px'
+          }}
+        />
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full pt-[347px] lg:pt-0">
           <div className="flex flex-col items-center justify-center relative z-10" style={{ height: '100%' }}>
             {/* Content */}
             <div className="text-center max-w-4xl mx-auto">
@@ -237,7 +377,15 @@ function ForDrivers() {
 
       {/* Start Earning Section */}
       <section className="py-12 lg:py-20">
-        <div style={{ paddingLeft: '20px', paddingRight: '20px' }} className="lg:px-[60px]">
+        <style>{`
+          @media (min-width: 1024px) {
+            .start-earning-outer-container {
+              padding-left: 60px !important;
+              padding-right: 60px !important;
+            }
+          }
+        `}</style>
+        <div style={{ paddingLeft: '20px', paddingRight: '20px' }} className="lg:px-[60px] start-earning-outer-container">
           <div className="relative rounded-3xl overflow-hidden bg-white" style={{ boxShadow: '0 10px 30px rgba(0,0,0,0.1)' }}>
             <div className="bg-black rounded-3xl">
               {/* Background Image at Bottom */}
