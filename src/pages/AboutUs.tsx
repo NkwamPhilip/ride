@@ -230,8 +230,14 @@ function AboutUs() {
               padding-bottom: 40px !important;
             }
           }
+          @media (min-width: 1024px) {
+            .join-movement-outer-container {
+              padding-left: 60px !important;
+              padding-right: 60px !important;
+            }
+          }
         `}</style>
-        <div style={{ paddingLeft: '20px', paddingRight: '20px' }} className="lg:px-[60px]">
+        <div style={{ paddingLeft: '20px', paddingRight: '20px' }} className="lg:px-[60px] join-movement-outer-container">
           <div className="relative rounded-3xl overflow-hidden" style={{ backgroundColor: '#30004B' }}>
             {/* Background Image at Bottom */}
             <img
