@@ -4,6 +4,7 @@ import Button from './Button'
 import logo from '../assets/logo.svg'
 import mobileLogo from '../assets/mobile-logo.svg'
 import smartPhoneIcon from '../assets/smart-phone.svg'
+import navSelector from '../assets/nav-selector.svg'
 
 function Navigation() {
   const location = useLocation()
@@ -61,13 +62,28 @@ function Navigation() {
               <Link
                 key={item.path}
                 to={item.path}
-                className={`text-sm font-medium transition-colors ${
+                className={`text-sm font-medium transition-colors relative inline-block ${
                   isActive(item.path)
-                    ? 'text-gray-900 border-b-2 border-red-500 pb-1'
+                    ? 'text-gray-900 px-4 py-2'
                     : 'text-gray-700 hover:text-gray-900'
                 }`}
               >
-                {item.label}
+                {isActive(item.path) && (
+                  <img
+                    src={navSelector}
+                    alt=""
+                    className="absolute pointer-events-none"
+                    style={{
+                      top: '55%',
+                      left: '50%',
+                      transform: 'translate(-50%, -50%)',
+                      width: '102px',
+                      height: '38px',
+                      zIndex: 0
+                    }}
+                  />
+                )}
+                <span className="relative z-10">{item.label}</span>
               </Link>
             ))}
           </div>
