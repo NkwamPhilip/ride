@@ -24,10 +24,7 @@ import Footer from '../components/Footer'
 function ForRiders() {
   return (
     <div className="w-full" style={{ marginBottom: 0, paddingBottom: 0 }}>
-      {/* Hero Section */}
       <section className="bg-white relative pt-5 pb-10 lg:pt-0 lg:pb-0 lg:h-[800px]" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-        {/* Mobile Hero Images - Before content, horizontally arranged */}
-        {/* Hero Flower Left - At top left of Hero 4 (Mobile) */}
         <img
           src={heroFlowerLeft}
           alt=""
@@ -40,7 +37,6 @@ function ForRiders() {
             height: '40px'
           }}
         />
-        {/* Hero 4 Image - Mobile, Left, overlapping Hero 6 by 40% */}
         <img
           src={hero4}
           alt=""
@@ -55,7 +51,6 @@ function ForRiders() {
             borderRadius: '16px'
           }}
         />
-        {/* Hero 1 Image - Mobile, Right, moved up */}
         <img
           src={hero1}
           alt=""
@@ -70,7 +65,6 @@ function ForRiders() {
             borderRadius: '16px'
           }}
         />
-        {/* Hero Flower Bottom Right - At bottom right of Hero 1 (Mobile) */}
         <img
           src={heroFlowerBottomRight}
           alt=""
@@ -83,7 +77,6 @@ function ForRiders() {
             height: '27px'
           }}
         />
-        {/* Hero 6 Image - Mobile, Center, overlapping Hero 1 by 10% */}
         <img
           src={hero6}
           alt=""
@@ -98,7 +91,6 @@ function ForRiders() {
             borderRadius: '16px'
           }}
         />
-        {/* Hero 5 Image - Overlapping Hero 7 from the left */}
         <img
           src={hero5}
           alt=""
@@ -113,7 +105,6 @@ function ForRiders() {
             borderRadius: '16px'
           }}
         />
-        {/* Hero Flower - At the edge of Hero 5 */}
         <img
           src={heroFlowerLeft}
           alt=""
@@ -126,7 +117,6 @@ function ForRiders() {
             height: '40px'
           }}
         />
-        {/* Hero 7 Image - Top Left */}
         <img
           src={hero7}
           alt=""
@@ -141,7 +131,6 @@ function ForRiders() {
             borderRadius: '16px'
           }}
         />
-        {/* Hero 4 Image - Top Right */}
         <img
           src={hero4}
           alt=""
@@ -156,7 +145,6 @@ function ForRiders() {
             borderRadius: '16px'
           }}
         />
-        {/* Hero 6 Image - Top Right, starting from 70% of Hero 4 height */}
         <img
           src={hero6}
           alt=""
@@ -171,7 +159,6 @@ function ForRiders() {
             borderRadius: '16px'
           }}
         />
-        {/* Hero 8 Image - Top Right, more aligned to the right */}
         <img
           src={hero8}
           alt=""
@@ -186,10 +173,8 @@ function ForRiders() {
             borderRadius: '16px'
           }}
         />
-        {/* Background Image - Hidden on mobile */}
         <div className="hidden lg:block absolute inset-0" style={{ backgroundImage: `url(${riderHeroBackground})`, backgroundSize: '100% auto', backgroundPosition: 'right center', backgroundRepeat: 'no-repeat' }}></div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative w-full pt-[408px] lg:pt-0">
-          {/* Center - Content */}
           <div className="text-center max-w-[700px] mx-auto relative z-10 lg:-translate-y-20">
             <h1 className="text-2xl sm:text-3xl lg:text-[55px] font-medium text-gray-900 mb-4 lg:mb-6 lg:leading-normal max-w-[700px] mx-auto px-4 lg:px-0" style={{ lineHeight: '1.2' }}>
               Smarter.{' '}Safer.{' '}Cheaper.{' '}Your{' '}
@@ -211,7 +196,6 @@ function ForRiders() {
             </div>
           </div>
         </div>
-        {/* Hero 3 Image - Bottom Left, Overlapping Hero 2 from the left */}
         <img
           src={hero3}
           alt=""
@@ -226,7 +210,6 @@ function ForRiders() {
             borderRadius: '16px'
           }}
         />
-        {/* Hero 2 Image - Bottom Left */}
         <img
           src={hero2}
           alt=""
@@ -241,7 +224,6 @@ function ForRiders() {
             borderRadius: '16px'
           }}
         />
-        {/* Hero 1 Image - Bottom Right */}
         <img
           src={hero1}
           alt=""
@@ -256,7 +238,6 @@ function ForRiders() {
             borderRadius: '16px'
           }}
         />
-        {/* Hero Flower - At the top right of Hero 1 */}
         <img
           src={heroFlower}
           alt=""
@@ -269,9 +250,7 @@ function ForRiders() {
             height: '40px'
           }}
         />
-        {/* Animated Cars - Hidden on mobile */}
         <div className="hidden lg:block absolute bottom-0 left-0 w-full h-20 overflow-hidden">
-          {/* First Car - Red */}
           <img
             src={bubbleGumCar}
             alt="Car"
@@ -282,7 +261,6 @@ function ForRiders() {
               filter: 'hue-rotate(0deg) saturate(2) brightness(1.1)'
             }}
           />
-          {/* Second Car - Green */}
           <img
             src={bubbleGumCar}
             alt="Car"
@@ -294,7 +272,6 @@ function ForRiders() {
               filter: 'hue-rotate(120deg) saturate(1.5) brightness(1.1)'
             }}
           />
-          {/* Third Car - Blue */}
           <img
             src={bubbleGumCar}
             alt="Car"
@@ -318,12 +295,9 @@ function ForRiders() {
           }
         `}</style>
       </section>
-      {/* Divider */}
       <div className="w-full border-t border-gray-200 mt-8"></div>
 
-      {/* How It Works Section */}
       <section className="bg-black relative py-12 lg:py-20 overflow-hidden mx-4 sm:mx-8 lg:mx-16 mt-8 lg:mt-12" style={{ borderRadius: '30px', padding: '40px 20px lg:100px lg:40px' }}>
-        {/* Background Vector Overlay - Hidden on mobile */}
         <img
           src={howItWorkVector}
           alt=""
@@ -381,7 +355,6 @@ function ForRiders() {
         />
 
         <div className="w-full lg:max-w-[800px] mx-auto px-4 sm:px-6 lg:px-8 relative z-10 lg:h-[800px]">
-          {/* Top Header - Centered */}
           <div className="text-center text-white mb-8 lg:mb-8" style={{ zIndex: 3 }}>
             <h2 className="text-2xl sm:text-3xl lg:text-[38px] font-extrabold mb-4" style={{ fontWeight: 800 }}>HOW IT WORKS</h2>
             <p className="text-sm mx-auto px-4" style={{ fontSize: '14px', fontWeight: 400, maxWidth: '350px' }}>
@@ -389,9 +362,7 @@ function ForRiders() {
             </p>
           </div>
 
-          {/* Bottom Section - Mobile: Stacked, Desktop: Side by side */}
           <div className="relative" style={{ zIndex: 3 }}>
-            {/* Mobile Image - Centered on mobile, positioned on desktop */}
             <div className="flex justify-center mb-8 lg:hidden">
               <img
                 src={mobileImage}
@@ -431,7 +402,6 @@ function ForRiders() {
                   </div>
                 </div>
 
-                {/* Step 2 */}
                 <div className="bg-white text-black h-auto lg:h-[85px] py-3 px-4 lg:p-5 flex flex-row items-center justify-center gap-3 lg:justify-start lg:gap-4" style={{ borderRadius: '20px' }}>
                   <div className="flex items-center justify-center flex-shrink-0">
                     <img src={findRideIcon} alt="Find Ride" className="w-10 h-10 lg:w-[45px] lg:h-[45px]" />
@@ -442,7 +412,6 @@ function ForRiders() {
                   </div>
                 </div>
 
-                {/* Step 3 */}
                 <div className="bg-white text-black h-auto lg:h-[85px] py-3 px-4 lg:p-5 flex flex-row items-center justify-center gap-3 lg:justify-start lg:gap-4" style={{ borderRadius: '20px' }}>
                   <div className="flex items-center justify-center flex-shrink-0">
                     <img src={payEasilyIcon} alt="Pay Easily" className="w-10 h-10 lg:w-[45px] lg:h-[45px]" />
@@ -453,7 +422,6 @@ function ForRiders() {
                   </div>
                 </div>
 
-                {/* Step 4 */}
                 <div className="bg-white text-black h-auto lg:h-[85px] py-3 px-4 lg:p-5 flex flex-row items-center justify-center gap-3 lg:justify-start lg:gap-4" style={{ borderRadius: '20px' }}>
                   <div className="flex items-center justify-center flex-shrink-0">
                     <img src={rideConfidenceIcon} alt="Ride Confidence" className="w-10 h-10 lg:w-[45px] lg:h-[45px]" />
@@ -469,13 +437,10 @@ function ForRiders() {
         </div>
       </section>
 
-      {/* Divider */}
       <div className="w-full border-t border-gray-200 mt-12"></div>
 
-      {/* Advantages Section */}
       <section className="py-12 lg:py-20" style={{ backgroundColor: '#F8F8F8' }}>
         <div style={{ paddingLeft: '20px', paddingRight: '20px' }} className="lg:px-16">
-          {/* Header */}
           <div className="text-center mb-8 lg:mb-12">
             <h2 className="mb-4 mx-auto text-2xl sm:text-3xl lg:text-[38px]" style={{ fontWeight: 800, maxWidth: '500px' }}>
               The advantages of{' '}
@@ -490,7 +455,6 @@ function ForRiders() {
             </button>
           </div>
 
-          {/* Image Cards Grid */}
           <style>{`
             @media (min-width: 1024px) {
               .advantages-cards-container {
@@ -500,9 +464,7 @@ function ForRiders() {
             }
           `}</style>
           <div className="space-y-6 advantages-cards-container">
-            {/* Top Row - 3 Cards */}
             <div className="grid grid-cols-1 md:grid-cols-6 gap-6">
-              {/* Card 1 */}
               <div className="md:col-span-2 relative rounded-2xl overflow-hidden" style={{ height: '236px' }}>
                 <img src={hero1} alt="Professional & Verified Community" className="w-full h-full object-cover" />
                 <div className="absolute inset-0" style={{ background: 'linear-gradient(180deg, rgba(1, 1, 1, 0.32) 0%, rgba(1, 1, 1, 0.73) 100%)' }}></div>
@@ -512,7 +474,6 @@ function ForRiders() {
                 </div>
               </div>
 
-              {/* Card 2 */}
               <div className="md:col-span-2 relative rounded-2xl overflow-hidden" style={{ height: '236px' }}>
                 <img src={hero2} alt="Affordable Daily Transportation" className="w-full h-full object-cover" />
                 <div className="absolute inset-0" style={{ background: 'linear-gradient(180deg, rgba(1, 1, 1, 0.32) 0%, rgba(1, 1, 1, 0.73) 100%)' }}></div>
@@ -522,7 +483,6 @@ function ForRiders() {
                 </div>
               </div>
 
-              {/* Card 3 */}
               <div className="md:col-span-2 relative rounded-2xl overflow-hidden" style={{ height: '236px' }}>
                 <img src={hero3} alt="Comfort Meets Convenience" className="w-full h-full object-cover" />
                 <div className="absolute inset-0" style={{ background: 'linear-gradient(180deg, rgba(1, 1, 1, 0.32) 0%, rgba(1, 1, 1, 0.73) 100%)' }}></div>
@@ -533,9 +493,7 @@ function ForRiders() {
               </div>
             </div>
 
-            {/* Bottom Row - 2 Wider Cards */}
             <div className="grid grid-cols-1 md:grid-cols-6 gap-6">
-              {/* Card 4 */}
               <div className="md:col-span-3 relative rounded-2xl overflow-hidden" style={{ height: '360px' }}>
                 <img src={hero4} alt="Eco Friendly" className="w-full h-full object-cover" />
                 <div className="absolute inset-0" style={{ background: 'linear-gradient(180deg, rgba(1, 1, 1, 0.32) 0%, rgba(1, 1, 1, 0.73) 100%)' }}></div>
@@ -545,7 +503,6 @@ function ForRiders() {
                 </div>
               </div>
 
-              {/* Card 5 */}
               <div className="md:col-span-3 relative rounded-2xl overflow-hidden" style={{ height: '360px' }}>
                 <img src={hero5} alt="Designed for Nigeria" className="w-full h-full object-cover" />
                 <div className="absolute inset-0" style={{ background: 'linear-gradient(180deg, rgba(1, 1, 1, 0.32) 0%, rgba(1, 1, 1, 0.73) 100%)' }}></div>
@@ -559,10 +516,8 @@ function ForRiders() {
         </div>
       </section>
 
-      {/* Divider */}
       <div className="w-full border-t border-gray-200 mt-12"></div>
 
-      {/* Earn More Section */}
       <section className="py-12 lg:py-20">
         <style>{`
           @media (min-width: 1024px) {
@@ -584,7 +539,6 @@ function ForRiders() {
             </svg>
             
             <div style={{ clipPath: 'url(#earnMoreDecorative)' }}>
-              {/* Background Image at Bottom */}
               <img
                 src={riderHeroBackground}
                 alt=""
@@ -601,7 +555,6 @@ function ForRiders() {
               />
 
               <div className="flex flex-col lg:flex-row items-center gap-8 p-6 lg:p-12 relative z-10">
-                {/* Left Side - Text Content */}
                 <div className="flex-1 text-white text-center lg:text-left">
                   <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4">
                     Earn More From Your Daily Commute
@@ -615,7 +568,6 @@ function ForRiders() {
                   </button>
                 </div>
 
-                {/* Right Side - People Illustration */}
                 <div className="flex-shrink-0">
                   <img src={peopleIcon} alt="People" className="w-full h-auto max-w-md" />
                 </div>
@@ -625,7 +577,6 @@ function ForRiders() {
         </div>
       </section>
 
-      {/* Footer */}
       <Footer />
     </div>
   )

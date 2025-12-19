@@ -26,12 +26,10 @@ function Navigation() {
     <nav className="bg-[#F8F8F8]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center" style={{ height: '110px' }}>
-          {/* Desktop Logo */}
           <Link to="/" className="hidden md:flex items-center">
             <img src={logo} alt="Ride2Five" className="h-9" />
           </Link>
 
-          {/* Mobile: Hamburger + Logo */}
           <div className="md:hidden flex items-center gap-3">
             <button 
               onClick={toggleMobileMenu}
@@ -56,7 +54,6 @@ function Navigation() {
             </Link>
           </div>
 
-          {/* Desktop Navigation Links */}
           <div className="hidden md:flex items-center space-x-8 flex-1 justify-center">
             {navItems.map((item) => (
               <Link
@@ -88,7 +85,6 @@ function Navigation() {
             ))}
           </div>
 
-          {/* Download Button - Visible on both mobile and desktop */}
           <button className="h-[40px] w-[140px] md:h-[50px] md:w-[200px] bg-red-500 text-white hover:bg-red-600 rounded-lg transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2 flex items-center justify-center gap-2 shadow-md hover:shadow-lg">
             <img src={smartPhoneIcon} alt="Phone" style={{ width: '20px', height: '20px' }} className="md:w-5 md:h-5" />
             <span className="text-[12px] md:text-sm font-semibold">Download the app</span>
@@ -96,7 +92,6 @@ function Navigation() {
         </div>
       </div>
 
-      {/* Mobile menu - Hidden by default */}
       {isMobileMenuOpen && (
         <div className="md:hidden border-t border-gray-200">
           <div className="px-2 pt-2 pb-3 space-y-1">

@@ -13,10 +13,8 @@ import riderHeroBackground from '../assets/rider-hero-background 09.55.29.svg'
 function AboutUs() {
   return (
     <div className="w-full" style={{ marginBottom: 0, paddingBottom: 0 }}>
-      {/* Hero Section */}
       <section className="bg-white relative py-20 px-5 lg:px-[60px] about-us-hero-section" style={{ minHeight: '1100px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
         <div className="w-full flex items-center justify-center">
-          {/* Black Rounded Container */}
           <div className="bg-black rounded-3xl w-full relative overflow-hidden about-us-black-container" style={{ borderRadius: '30px' }}>
             <style>{`
               @media (max-width: 1023px) {
@@ -56,19 +54,15 @@ function AboutUs() {
                 }
               }
             `}</style>
-            {/* Decorative Elements - Top Left */}
             <div className="absolute top-0 left-0" style={{ zIndex: 2 }}>
               <img src={heroFlower} alt="" className="w-16 h-16" style={{ filter: 'invert(1) brightness(0) saturate(100%) hue-rotate(0deg)' }} />
             </div>
 
-            {/* Decorative Elements - Top Right */}
             <div className="absolute top-0 right-0" style={{ zIndex: 2 }}>
               <img src={heroFlower} alt="" className="w-16 h-16" style={{ filter: 'invert(1) brightness(0) saturate(100%) hue-rotate(0deg)' }} />
             </div>
 
-            {/* Content Container */}
             <div className="flex flex-col about-us-content-container">
-              {/* Top Half - Text Content */}
               <div className="flex flex-col justify-center items-center px-8 lg:px-16 py-12 relative z-10 text-center about-us-text-container" style={{ minHeight: '500px' }}>
                 <h1 className="text-white mb-6 leading-tight text-[32px] lg:text-[55px] w-[350px] lg:w-auto mx-auto" style={{ fontWeight: 500 }}>
                   We believe commuting<br />
@@ -83,7 +77,6 @@ function AboutUs() {
                 </p>
               </div>
 
-              {/* Bottom Half - Image */}
               <div className="relative overflow-hidden about-us-image-container" style={{ borderBottomLeftRadius: '30px', borderBottomRightRadius: '30px', paddingLeft: '40px', paddingRight: '40px', paddingTop: '40px', height: '450px' }}>
                 <img 
                   src={aboutUsMainImage} 
@@ -117,7 +110,6 @@ function AboutUs() {
         </div>
       </section>
 
-      {/* What We Stand For Section */}
       <section className="pb-20 pt-4 about-us-stand-for-section" style={{ backgroundColor: '#FBFBFB', height: '386px', display: 'flex', flexDirection: 'column', justifyContent: 'flex-start', paddingLeft: '60px', paddingRight: '60px' }}>
         <style>{`
           @media (max-width: 1023px) {
@@ -141,14 +133,11 @@ function AboutUs() {
           }
         `}</style>
         <div className="w-full">
-          {/* Section Heading */}
           <h2 className="mb-12 about-us-stand-for-heading" style={{ fontSize: '38px', fontWeight: 800, textAlign: 'left' }}>
             What We Stand For
           </h2>
 
-          {/* Cards Grid */}
           <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6">
-            {/* Card 1: Trust First */}
             <div className="relative rounded-2xl overflow-hidden w-full about-us-stand-for-card" style={{ height: '240px' }}>
               <img 
                 src={hero1} 
@@ -162,7 +151,6 @@ function AboutUs() {
               </div>
             </div>
 
-            {/* Card 2: Affordability */}
             <div className="relative rounded-2xl overflow-hidden w-full about-us-stand-for-card" style={{ height: '240px' }}>
               <img 
                 src={hero2} 
@@ -176,7 +164,6 @@ function AboutUs() {
               </div>
             </div>
 
-            {/* Card 3: Community & Connection */}
             <div className="relative rounded-2xl overflow-hidden w-full about-us-stand-for-card" style={{ height: '240px' }}>
               <img 
                 src={hero3} 
@@ -190,7 +177,6 @@ function AboutUs() {
               </div>
             </div>
 
-            {/* Card 4: Smart Mobility for Africa */}
             <div className="relative rounded-2xl overflow-hidden w-full about-us-stand-for-card" style={{ height: '240px' }}>
               <img 
                 src={smartMobility} 
@@ -204,7 +190,6 @@ function AboutUs() {
               </div>
             </div>
 
-            {/* Card 5: Sustainability */}
             <div className="relative rounded-2xl overflow-hidden w-full about-us-stand-for-card" style={{ height: '240px' }}>
               <img 
                 src={communityConnection} 
@@ -221,7 +206,6 @@ function AboutUs() {
         </div>
       </section>
 
-      {/* Join the Movement Section */}
       <section className="py-12 lg:py-20 about-us-join-movement">
         <style>{`
           @media (max-width: 1023px) {
@@ -239,7 +223,6 @@ function AboutUs() {
         `}</style>
         <div style={{ paddingLeft: '20px', paddingRight: '20px' }} className="lg:px-[60px] join-movement-outer-container">
           <div className="relative rounded-3xl overflow-hidden" style={{ backgroundColor: '#30004B' }}>
-            {/* Background Image at Bottom */}
             <img
               src={riderHeroBackground}
               alt=""
@@ -256,7 +239,6 @@ function AboutUs() {
             />
 
             <div className="flex flex-col lg:flex-row items-center gap-8 p-6 lg:p-12 relative z-10">
-              {/* Left Side - Text Content */}
               <div className="flex-1 text-white">
                 <h2 className="text-3xl lg:text-4xl font-bold mb-4">
                   Join the Movement
@@ -273,7 +255,6 @@ function AboutUs() {
                 </button>
               </div>
 
-              {/* Right Side - People Illustration */}
               <div className="flex-shrink-0">
                 <img src={peopleIcon} alt="People" className="w-full h-auto max-w-md" />
               </div>
