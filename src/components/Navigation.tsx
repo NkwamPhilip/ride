@@ -1,6 +1,5 @@
 import { useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
-import Button from './Button'
 import logo from '../assets/logo.svg'
 import mobileLogo from '../assets/mobile-logo.svg'
 import smartPhoneIcon from '../assets/smart-phone.svg'
