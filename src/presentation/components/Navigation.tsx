@@ -1,17 +1,14 @@
 import { useState } from 'react'
-<<<<<<< HEAD:src/presentation/components/Navigation.tsx
 import { Link, useLocation, useNavigate } from 'react-router-dom'
 import logo from '../../assets/icons/logo.svg'
 import mobileLogo from '../../assets/icons/mobile-logo.svg'
 import smartPhoneIcon from '../../assets/icons/smart-phone.svg'
 import navSelector from '../../assets/icons/nav-selector.svg'
-=======
 import { Link, useLocation } from 'react-router-dom'
 import logo from '../assets/logo.svg'
 import mobileLogo from '../assets/mobile-logo.svg'
 import smartPhoneIcon from '../assets/smart-phone.svg'
 import navSelector from '../assets/nav-selector.svg'
->>>>>>> f86a44f9b7880204946062b5b230a02444578f57:src/components/Navigation.tsx
 
 function Navigation() {
   const location = useLocation()
