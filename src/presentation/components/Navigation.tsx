@@ -4,11 +4,6 @@ import logo from '../../assets/icons/logo.svg'
 import mobileLogo from '../../assets/icons/mobile-logo.svg'
 import smartPhoneIcon from '../../assets/icons/smart-phone.svg'
 import navSelector from '../../assets/icons/nav-selector.svg'
-import { Link, useLocation } from 'react-router-dom'
-import logo from '../assets/logo.svg'
-import mobileLogo from '../assets/mobile-logo.svg'
-import smartPhoneIcon from '../assets/smart-phone.svg'
-import navSelector from '../assets/nav-selector.svg'
 
 function Navigation() {
   const location = useLocation()
