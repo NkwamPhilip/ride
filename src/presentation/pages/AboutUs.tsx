@@ -12,7 +12,6 @@ import smartMobility from '../../assets/images/smart-mobility.png'
 import communityConnection from '../../assets/images/community-connection.png'
 import peopleIcon from '../../assets/icons/people.svg'
 import smartPhoneIcon from '../../assets/icons/smart-phone.svg'
-import riderHeroBackground from '../../assets/icons/rider-hero-background.svg'
 import earnMoreBackground from '../../assets/icons/earn-more-background.svg'
 import mobileEarnBg from '../../assets/icons/mobile-earn-bg.svg'
 
