@@ -1,8 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import Layout from './layouts/Layout'
-import ForRiders from './pages/ForRiders'
-import ForDrivers from './pages/ForDrivers'
-import AboutUs from './pages/AboutUs'
+import { Layout } from './presentation/layouts'
+import { ForRiders, ForDrivers, AboutUs, TermsAndConditions, PrivacyPolicy, ComingSoon } from './presentation/pages'
 
 function App() {
   return (
@@ -12,6 +10,9 @@ function App() {
           <Route path="/" element={<ForRiders />} />
           <Route path="/drivers" element={<ForDrivers />} />
           <Route path="/about" element={<AboutUs />} />
+          <Route path="/terms" element={<TermsAndConditions />} />
+          <Route path="/privacy" element={<PrivacyPolicy />} />
+          <Route path="/coming-soon" element={<ComingSoon />} />
         </Routes>
       </Layout>
     </Router>

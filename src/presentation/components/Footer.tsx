@@ -1,12 +1,20 @@
-import { Link } from 'react-router-dom'
-import smartPhoneIcon from '../assets/smart-phone.svg'
-import footerLogo from '../assets/footer-logo.svg'
+import { Link, useNavigate } from 'react-router-dom'
+import smartPhoneIcon from '../../assets/icons/smart-phone.svg'
+import footerLogo from '../../assets/icons/footer-logo.svg'
 
 function Footer() {
+  const navigate = useNavigate()
   return (
     <footer style={{ marginBottom: 0, paddingBottom: 0, width: '100%' }}>
+      <style>{`
+        @media (max-width: 767px) {
+          .footer-links-mobile {
+            font-size: 12px !important;
+          }
+        }
+      `}</style>
       <div className="bg-black" style={{ marginBottom: 0, paddingBottom: 0, borderTopLeftRadius: '60px', borderTopRightRadius: '60px', width: '100%' }}>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div className="w-full pl-20 pr-20 py-12">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
             <div className="flex flex-col items-center md:items-start">
               <img src={footerLogo} alt="Ride2Five" className="mb-4" style={{ width: '200px', height: '40px' }} />
@@ -40,11 +48,11 @@ function Footer() {
               </div>
             </div>
 
-            <div className="flex flex-col items-center md:items-start justify-center">
+            <div className="flex flex-col items-center justify-start">
               <div className="flex gap-6">
-                <Link to="/" className="text-white hover:text-gray-300">For Riders</Link>
-                <Link to="/drivers" className="text-white hover:text-gray-300">For Drivers</Link>
-                <Link to="/about" className="text-white hover:text-gray-300">About Us</Link>
+                <Link to="/" className="text-white hover:text-gray-300" style={{ fontSize: '14px', fontWeight: 500 }}>For Riders</Link>
+                <Link to="/drivers" className="text-white hover:text-gray-300" style={{ fontSize: '14px', fontWeight: 500 }}>For Drivers</Link>
+                <Link to="/about" className="text-white hover:text-gray-300" style={{ fontSize: '14px', fontWeight: 500 }}>About Us</Link>
               </div>
             </div>
 
@@ -52,7 +60,10 @@ function Footer() {
               <button className="h-[50px] w-[200px] border-2 border-white text-white bg-transparent hover:bg-white hover:text-black rounded-lg transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 flex items-center justify-center shadow-md hover:shadow-lg">
                 <span className="text-sm font-semibold">Become a Driver</span>
               </button>
-              <button className="h-[50px] w-[200px] bg-red-500 text-white hover:bg-red-600 rounded-lg transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2 flex items-center justify-center gap-2 shadow-md hover:shadow-lg">
+              <button
+                onClick={() => navigate('/coming-soon')}
+                className="h-[50px] w-[200px] bg-red-500 text-white hover:bg-red-600 rounded-lg transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2 flex items-center justify-center gap-2 shadow-md hover:shadow-lg"
+              >
                 <img src={smartPhoneIcon} alt="Phone" className="w-5 h-5" />
                 <span className="text-sm font-semibold">Download the app</span>
               </button>
@@ -62,13 +73,13 @@ function Footer() {
           <div className="border-t border-gray-700 my-8"></div>
 
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-            <div className="text-gray-400 order-1 md:order-1" style={{ fontWeight: 300, fontSize: '14px' }}>
+            <div className="text-gray-400 order-2 md:order-1" style={{ fontWeight: 300, fontSize: '14px' }}>
               © 2025 Ride2Five. All rights Reserved
             </div>
 
-            <div className="flex gap-6 text-gray-400 order-2 md:order-2" style={{ fontWeight: 300, fontSize: '14px' }}>
-              <a href="#" className="hover:text-gray-300 underline">Terms of use</a>
-              <a href="#" className="hover:text-gray-300 underline">Privacy Policies</a>
+            <div className="flex gap-6 text-gray-400 order-1 md:order-2 footer-links-mobile" style={{ fontWeight: 300, fontSize: '14px' }}>
+              <Link to="/terms" className="hover:text-gray-300 underline">Terms of use</Link>
+              <Link to="/privacy" className="hover:text-gray-300 underline">Privacy Policies</Link>
               <a href="#" className="hover:text-gray-300 underline">Cookies</a>
             </div>
           </div>
